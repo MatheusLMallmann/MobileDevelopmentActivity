@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">UniritterApp</string>
+    <string name="title_activity_login_screen">LoginScreen</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="LoadingSplashScreen">Carregando</string>
+    <string name="string_login">Login</string>
+    <string name="string_user">Usuário</string>
+    <string name="string_senha">Senha</string>
+    <string name="string_botton_login">Entrar</string>
+    <string name="string_saudacao">Bem-vindo</string>
+    <string name="string_botao_voltarSplash">Voltar para SplashScreen</string>
+    <string name="string_botao_voltarLogin">Voltar para Login Screen</string>
+</resources>

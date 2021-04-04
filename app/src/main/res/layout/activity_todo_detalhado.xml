@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TodoDetalhadoActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/userId_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/id_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/title_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textSize="30sp"/>
+
+    <CheckBox
+        android:id="@+id/completed_todo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Completado" />
+</LinearLayout>

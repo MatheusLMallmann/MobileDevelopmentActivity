@@ -42,4 +42,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.61" />
+
+    <Button
+        android:id="@+id/botaoScrollView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginEnd="299dp"
+        android:layout_marginRight="299dp"
+        android:layout_marginBottom="167dp"
+        android:text="@string/botaoScrollView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/botaoVoltarLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>

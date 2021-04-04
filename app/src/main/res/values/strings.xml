@@ -15,4 +15,13 @@
     <string name="string_saudacao">Bem-vindo</string>
     <string name="string_botao_voltarSplash">Voltar para SplashScreen</string>
     <string name="string_botao_voltarLogin">Voltar para Login Screen</string>
+    <string name="botaoScrollView">Scroll View</string>
+    <string name="posts">Posts</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="Comments">Comments</string>
+    <string name="Albums">Albums</string>
+    <string name="Todos">Todos</string>
+    <string name="Completado">Completado</string>
 </resources>

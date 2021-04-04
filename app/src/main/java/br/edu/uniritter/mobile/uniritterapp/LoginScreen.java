@@ -29,6 +29,7 @@ public class LoginScreen extends AppCompatActivity {
         EditText loginPassword = (EditText) findViewById(R.id.password);
         String password = loginPassword.getText().toString();
 
+        //TODO (Change the Toast to DialogFragment)
         String mensagemErro = "Login e senha devem ser iguais";
 
         // Comparando Login e Senha

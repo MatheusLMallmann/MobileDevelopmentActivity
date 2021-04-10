@@ -20,8 +20,8 @@ public class OptionsRecyclerView extends AppCompatActivity {
         Button botaoAlbums = (Button) findViewById(R.id.botaoRVAlbums);
 
         botaoTodos.setOnClickListener(this::todos);
-//        botaoPosts.setOnClickListener(this::posts);
-//        botaoAlbums.setOnClickListener(this::albums);
+        botaoPosts.setOnClickListener(this::posts);
+        botaoAlbums.setOnClickListener(this::albums);
     }
 
     private void todos(View view){
@@ -29,13 +29,13 @@ public class OptionsRecyclerView extends AppCompatActivity {
         startActivity(intent);
     }
 
-//    private void posts(View view){
-//        Intent intent = new Intent(this, ScrollViewPosts.class);
-//        startActivity(intent);
-//    }
-//
-//    private void albums(View view){
-//        Intent intent = new Intent(this, ScrollViewAlbum.class);
-//        startActivity(intent);
-//    }
+    private void posts(View view){
+        Intent intent = new Intent(this, RecyclerViewPosts.class);
+        startActivity(intent);
+    }
+
+    private void albums(View view){
+        Intent intent = new Intent(this, RecyclerViewAlbums.class);
+        startActivity(intent);
+    }
 }

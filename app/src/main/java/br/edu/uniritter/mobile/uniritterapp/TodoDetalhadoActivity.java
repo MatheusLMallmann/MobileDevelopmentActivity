@@ -17,13 +17,13 @@ public class TodoDetalhadoActivity extends AppCompatActivity {
         setContentView(R.layout.activity_todo_detalhado);
         Intent intent = getIntent();
         Todo todo = intent.getParcelableExtra("objetoTodo");
-        TextView userId = findViewById(R.id.userId_todo);
+        TextView userId = findViewById(R.id.tvIdUser);
         userId.setText(todo.getUserId() + "");
-        TextView id = findViewById(R.id.id_todo);
+        TextView id = findViewById(R.id.tvId);
         id.setText(todo.getId() + "");
-        TextView title = findViewById(R.id.title_todo);
+        TextView title = findViewById(R.id.tvTitle);
         title.setText(todo.getTitle());
-        CheckBox completed = findViewById(R.id.completed_todo);
+        CheckBox completed = findViewById(R.id.cbCompleted);
         completed.setChecked(todo.isCompleted());
     }
 }

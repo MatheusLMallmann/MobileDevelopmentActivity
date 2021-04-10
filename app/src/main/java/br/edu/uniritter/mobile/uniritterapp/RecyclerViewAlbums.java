@@ -21,13 +21,17 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.uniritter.mobile.uniritterapp.adapter.AlbumAdapter;
+import br.edu.uniritter.mobile.uniritterapp.adapter.PostAdapter;
 import br.edu.uniritter.mobile.uniritterapp.adapter.TodoAdapter;
+import br.edu.uniritter.mobile.uniritterapp.model.Album;
+import br.edu.uniritter.mobile.uniritterapp.model.Post;
 import br.edu.uniritter.mobile.uniritterapp.model.Todo;
 
-public class RecyclerViewTodos extends AppCompatActivity
+public class RecyclerViewAlbums extends AppCompatActivity
         implements Response.Listener<JSONArray>, Response.ErrorListener{
 
-    public List<Todo> todos = new ArrayList<>();
+    public List<Album> albums = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -35,10 +39,10 @@ public class RecyclerViewTodos extends AppCompatActivity
 
         //Inicia RequestQueue
         RequestQueue queue = Volley.newRequestQueue(this);
-        String urlTodos = "https://jsonplaceholder.typicode.com/todos";
+        String urlAlbums = "https://jsonplaceholder.typicode.com/albums";
 
         // Request de JsonArray da URL
-        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, urlTodos, null,
+        JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, urlAlbums, null,
                 this,this);
 
         // Adiciona a request para o RequestQueue
@@ -50,18 +54,17 @@ public class RecyclerViewTodos extends AppCompatActivity
         try {
             for (int i = 0; i < response.length(); i++){
                 JSONObject json = response.getJSONObject(i);
-                Todo objeto = new Todo(json.getInt("userId"),
+                Album objeto = new Album(json.getInt("userId"),
                         json.getInt("id"),
-                        json.getString("title"),
-                        json.getBoolean("completed"));
+                        json.getString("title"));
 
-                todos.add(objeto);
+                albums.add(objeto);
             }
             RecyclerView recyclerView = findViewById(R.id.recyclerview);
             LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
             recyclerView.setLayoutManager(linearLayoutManager);
-            TodoAdapter todoAdapter = new TodoAdapter(todos);
-            recyclerView.setAdapter(todoAdapter);
+            AlbumAdapter albumAdapter = new AlbumAdapter(albums);
+            recyclerView.setAdapter(albumAdapter);
         }catch (JSONException e) {
             e.printStackTrace();
         }

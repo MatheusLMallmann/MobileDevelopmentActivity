@@ -11,7 +11,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniritterApp">
-        <activity android:name=".PostDetalhadoActivity"></activity>
+        <activity android:name=".PostDetalhadoActivity"/>
         <activity android:name=".AlbumDetalhadoActivity" />
         <activity android:name=".CommentDetalhadoActivity" />
         <activity android:name=".TodoDetalhadoActivity" />
@@ -20,6 +20,8 @@
         <activity android:name=".ScrollViewComment" />
         <activity android:name=".OptionsJson" />
         <activity android:name=".RecyclerViewTodos" />
+        <activity android:name=".RecyclerViewPosts" />
+        <activity android:name=".RecyclerViewAlbums"/>
         <activity android:name=".OptionsRecyclerView" />
         <activity android:name=".ScrollViewTodos" />
         <activity android:name=".HomeScreen" />

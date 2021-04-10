@@ -1,4 +1,4 @@
-package br.edu.uniritter.mobile.uniritterapp;
+package br.edu.uniritter.mobile.uniritterapp.model;
 
 import android.os.Build;
 import android.os.Parcel;
@@ -6,43 +6,46 @@ import android.os.Parcelable;
 
 import androidx.annotation.RequiresApi;
 
-public class Post implements Parcelable{
+public class Todo implements Parcelable {
+
     private int userId;
     private int id;
     private String title;
-    private String body;
+    private boolean completed;
 
     // Construtor
-    public Post(int userId, int id, String title, String body){
+    public Todo(int userId, int id, String title, boolean completed){
         this.userId = userId;
         this.id = id;
         this.title = title;
-        this.body = body;
+        this.completed = completed;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
-    private Post(Parcel parcel) {
+    private Todo(Parcel parcel) {
         this.userId = parcel.readInt();
         this.id = parcel.readInt();
         this.title = parcel.readString();
-        this.body = parcel.readString();
+        this.completed = parcel.readBoolean();
     }
 
-    public static final Parcelable.Creator<Post> CREATOR = new Parcelable.Creator<Post>() {
+    public static final Creator<Todo> CREATOR = new Creator<Todo>() {
         @RequiresApi(api = Build.VERSION_CODES.Q)
         @Override
-        public Post createFromParcel(Parcel in) {
-            return new Post(in);
+        public Todo createFromParcel(Parcel in) {
+            return new Todo(in);
         }
 
         @Override
-        public Post[] newArray(int size) {
-            return new Post[size];
+        public Todo[] newArray(int size) {
+            return new Todo[size];
         }
     };
 
     @Override
-    public int describeContents() { return 0; }
+    public int describeContents() {
+        return 0;
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
@@ -50,7 +53,7 @@ public class Post implements Parcelable{
         parcel.writeInt(this.userId);
         parcel.writeInt(this.id);
         parcel.writeString(this.title);
-        parcel.writeString(this.body);
+        parcel.writeBoolean(this.completed);
     }
 
     public int getUserId() {
@@ -77,11 +80,11 @@ public class Post implements Parcelable{
         this.title = title;
     }
 
-    public String getBody() {
-        return body;
+    public boolean isCompleted() {
+        return completed;
     }
 
-    public void setBody(String body) {
-        this.body = body;
+    public void setCompleted(boolean completed) {
+        this.completed = completed;
     }
 }

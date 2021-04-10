@@ -24,4 +24,5 @@
     <string name="Albums">Albums</string>
     <string name="Todos">Todos</string>
     <string name="Completado">Completado</string>
+    <string name="Recycler_View">Recycler View</string>
 </resources>

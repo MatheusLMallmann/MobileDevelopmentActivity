@@ -23,6 +23,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.uniritter.mobile.uniritterapp.model.Post;
+
 public class ScrollViewPosts extends AppCompatActivity
         implements Response.Listener<JSONArray>, Response.ErrorListener{
 
@@ -58,7 +60,7 @@ public class ScrollViewPosts extends AppCompatActivity
                 posts.add(objeto);
             }
 
-            LinearLayout linearLayout = findViewById(R.id.linearAlbums);
+            LinearLayout linearLayout = findViewById(R.id.linearPosts);
             for (Post objRecebido : posts){
                 Button botao = new Button(this);
                 botao.setText(objRecebido.getTitle());
@@ -68,7 +70,7 @@ public class ScrollViewPosts extends AppCompatActivity
                     public void onClick(View v) {
                         Button novoBotao = (Button) v;
                         Post post = (Post) novoBotao.getTag();
-                        Intent intent = new Intent(getApplicationContext(), ScrollViewAlbum.class);
+                        Intent intent = new Intent(getApplicationContext(), PostDetalhadoActivity.class);
 
                         intent.putExtra("objetoPost", post);
                         startActivity(intent);

@@ -1,4 +1,4 @@
-package br.edu.uniritter.mobile.uniritterapp;
+package br.edu.uniritter.mobile.uniritterapp.model;
 
 import android.os.Build;
 import android.os.Parcel;

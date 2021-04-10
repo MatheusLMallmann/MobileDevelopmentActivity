@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.widget.CheckBox;
 import android.widget.TextView;
 
+import br.edu.uniritter.mobile.uniritterapp.model.Todo;
+
 public class TodoDetalhadoActivity extends AppCompatActivity {
 
     @Override

@@ -17,10 +17,12 @@ public class HomeScreen extends AppCompatActivity {
         Button botaoVoltarSplash = (Button) findViewById(R.id.botaoVoltarSplash);
         Button botaoVoltarLogin = (Button) findViewById(R.id.botaoVoltarLogin);
         Button botaoScrollView = (Button) findViewById(R.id.botaoScrollView);
+        Button botaoRecyclerView = (Button) findViewById(R.id.botaoRecyclerView);
 
         botaoVoltarSplash.setOnClickListener(this::botaoVoltarSplash);
         botaoVoltarLogin.setOnClickListener(this::botaoVoltarLogin);
         botaoScrollView.setOnClickListener(this::botaoScrollView);
+        botaoRecyclerView.setOnClickListener(this::botaoRecyclerView);
     }
 
     private void botaoVoltarSplash(View view) {
@@ -35,6 +37,11 @@ public class HomeScreen extends AppCompatActivity {
 
     private void botaoScrollView(View view){
         Intent intent = new Intent(this, OptionsJson.class);
+        startActivity(intent);
+    }
+
+    private void botaoRecyclerView(View view){
+        Intent intent = new Intent(this, OptionsRecyclerView.class);
         startActivity(intent);
     }
 }

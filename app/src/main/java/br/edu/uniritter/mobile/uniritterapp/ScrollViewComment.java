@@ -23,6 +23,8 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import br.edu.uniritter.mobile.uniritterapp.model.Comment;
+
 public class ScrollViewComment extends AppCompatActivity
         implements Response.Listener<JSONArray>, Response.ErrorListener{
 
@@ -69,7 +71,7 @@ public class ScrollViewComment extends AppCompatActivity
                     public void onClick(View v) {
                         Button novoBotao = (Button) v;
                         Comment comment = (Comment) novoBotao.getTag();
-                        Intent intent = new Intent(getApplicationContext(), ScrollViewComment.class);
+                        Intent intent = new Intent(getApplicationContext(), CommentDetalhadoActivity.class);
 
                         intent.putExtra("objetoComment", comment);
                         startActivity(intent);

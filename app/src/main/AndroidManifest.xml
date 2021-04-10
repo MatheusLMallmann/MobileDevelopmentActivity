@@ -11,11 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniritterApp">
-        <activity android:name=".TodoDetalhadoActivity"></activity>
+        <activity android:name=".PostDetalhadoActivity"></activity>
+        <activity android:name=".AlbumDetalhadoActivity" />
+        <activity android:name=".CommentDetalhadoActivity" />
+        <activity android:name=".TodoDetalhadoActivity" />
         <activity android:name=".ScrollViewPosts" />
         <activity android:name=".ScrollViewAlbum" />
         <activity android:name=".ScrollViewComment" />
         <activity android:name=".OptionsJson" />
+        <activity android:name=".RecyclerViewTodos" />
+        <activity android:name=".OptionsRecyclerView" />
         <activity android:name=".ScrollViewTodos" />
         <activity android:name=".HomeScreen" />
         <activity android:name=".LoginScreen" />

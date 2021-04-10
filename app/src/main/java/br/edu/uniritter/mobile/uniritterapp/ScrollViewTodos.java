@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.ScrollView;
 import android.widget.Toast;
 
 import org.json.JSONArray;
@@ -23,6 +22,8 @@ import com.android.volley.toolbox.Volley;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import br.edu.uniritter.mobile.uniritterapp.model.Todo;
 
 public class ScrollViewTodos extends AppCompatActivity
     implements Response.Listener<JSONArray>, Response.ErrorListener{

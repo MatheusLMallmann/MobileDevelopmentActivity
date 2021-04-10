@@ -15,6 +15,7 @@
     <string name="string_saudacao">Bem-vindo</string>
     <string name="string_botao_voltarSplash">Voltar para SplashScreen</string>
     <string name="string_botao_voltarLogin">Voltar para Login Screen</string>
+<<<<<<< HEAD
     <string name="botaoScrollView">Scroll View</string>
     <string name="posts">Posts</string>
     <string name="button1">Button</string>
@@ -25,4 +26,6 @@
     <string name="Todos">Todos</string>
     <string name="Completado">Completado</string>
     <string name="Recycler_View">Recycler View</string>
+=======
+>>>>>>> parent of 3df7f8b (atividade 2 incompleta)
 </resources>

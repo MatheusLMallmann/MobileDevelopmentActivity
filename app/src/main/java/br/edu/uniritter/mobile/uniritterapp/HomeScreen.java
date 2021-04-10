@@ -16,6 +16,7 @@ public class HomeScreen extends AppCompatActivity {
 
         Button botaoVoltarSplash = (Button) findViewById(R.id.botaoVoltarSplash);
         Button botaoVoltarLogin = (Button) findViewById(R.id.botaoVoltarLogin);
+<<<<<<< HEAD
         Button botaoScrollView = (Button) findViewById(R.id.botaoScrollView);
         Button botaoRecyclerView = (Button) findViewById(R.id.botaoRecyclerView);
 
@@ -23,6 +24,11 @@ public class HomeScreen extends AppCompatActivity {
         botaoVoltarLogin.setOnClickListener(this::botaoVoltarLogin);
         botaoScrollView.setOnClickListener(this::botaoScrollView);
         botaoRecyclerView.setOnClickListener(this::botaoRecyclerView);
+=======
+
+        botaoVoltarSplash.setOnClickListener(this::botaoVoltarSplash);
+        botaoVoltarLogin.setOnClickListener(this::botaoVoltarLogin);
+>>>>>>> parent of 3df7f8b (atividade 2 incompleta)
     }
 
     private void botaoVoltarSplash(View view) {
@@ -34,6 +40,7 @@ public class HomeScreen extends AppCompatActivity {
         Intent intent = new Intent(this, LoginScreen.class);
         startActivity(intent);
     }
+<<<<<<< HEAD
 
     private void botaoScrollView(View view){
         Intent intent = new Intent(this, OptionsJson.class);
@@ -44,4 +51,6 @@ public class HomeScreen extends AppCompatActivity {
         Intent intent = new Intent(this, OptionsRecyclerView.class);
         startActivity(intent);
     }
+=======
+>>>>>>> parent of 3df7f8b (atividade 2 incompleta)
 }

@@ -2,8 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="br.edu.uniritter.mobile.uniritterapp">
 
-    <uses-permission android:name="android.permission.INTERNET" />
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -11,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UniritterApp">
+<<<<<<< HEAD
         <activity android:name=".PostDetalhadoActivity"/>
         <activity android:name=".AlbumDetalhadoActivity" />
         <activity android:name=".CommentDetalhadoActivity" />
@@ -25,6 +24,9 @@
         <activity android:name=".OptionsRecyclerView" />
         <activity android:name=".ScrollViewTodos" />
         <activity android:name=".HomeScreen" />
+=======
+        <activity android:name=".HomeScreen"></activity>
+>>>>>>> parent of 3df7f8b (atividade 2 incompleta)
         <activity android:name=".LoginScreen" />
         <activity android:name=".SplashScreen">
             <intent-filter>
